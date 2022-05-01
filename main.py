@@ -14,7 +14,7 @@ with header:
 with dataset:
      st.header('Global land temperatures')  
      st.text('This data has been extracted from United Nations Statistics Division-UNSD website')   
-     temperature_data =pd.read_csv('https://github.com/songokedwin/REPO/blob/main/data.csv')
+     temperature_data =pd.read_csv('https://raw.githubusercontent.com/songokedwin/REPO/main/data.csv')
      st.write(temperature_data.head())
      st.header('Temperature distribution')
      temperatur_dist=pd.DataFrame(temperature_data["AverageTemperatureFahr"].value_counts()).head(20)
